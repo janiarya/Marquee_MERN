@@ -1,0 +1,29 @@
+      .centralized {
+          text-align: center;
+
+      }
+
+      h2 {
+          color: rgb(205, 25, 25);
+          font-size: 20px;
+          font-weight: bold;
+      }
+
+      p {
+          color: green;
+          font-size: 15px;
+          font-weight: bold;
+      }
+
+      a:hover {
+          color: rgb(226, 20, 20);
+          transition: 0.2s;
+          transform: scale(1.02);
+          background-color: lightgreen;
+
+      }
+
+      body {
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+      }
