@@ -50,6 +50,33 @@
         
        
       }
+      /* Attribute selector */
+      input[name]{
+        border: 2px solid rgb(238, 20, 20);
+        border-radius: 5px;
+        padding: 10px;
+        
+        border-collapse: collapse;
+      }
+      input[type="submit"]{
+        background-color: rgb(218, 145, 145);
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover{
+        background-color: rgb(129, 170, 229);
+        transition: 0.2s;
+        transform: scale(1.02);
+      }
+      input[name="email"]{
+        border: 2px solid rgb(129, 170, 229);
+        border-radius: 5px;
+        padding: 10px;
+      }
     </style>
   </head>
   <body>
@@ -85,5 +112,12 @@
       </div>
       <p>lorem ipsum dolor sit amet</p>
     </section>
+    <form action="actionpage.html" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" /><br /><br />
+      <input type="submit" value="Submit"  />
+    </form>
   </body>
 </html>
