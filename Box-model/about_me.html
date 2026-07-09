@@ -13,7 +13,9 @@
       }
 
       body {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family:
+          "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
         border: 3px solid black;
         min-height: 100vh;
       }
@@ -79,11 +81,11 @@
 
         right: 80px;
 
-        bottom: 250px;
+        bottom: 50px;
 
         display: flex;
 
-        gap: 12px;
+        gap: 19px;
 
         padding: 8px;
 
@@ -106,6 +108,40 @@
 
       .social-box img:hover {
         transform: scale(1.18);
+      }
+      table{
+        border-collapse: collapse;
+        border: dotted;
+      }
+      
+      td,th{
+        border: 3px solid black;
+        padding: 10px;
+      }
+      .table_qualification{
+        text-align: center;
+        display: flex;
+        gap: 40px;
+        flex-direction: row;
+        /* justify-content: space-evenly;  spcae first then content space at start and at end with space evenly distirbuted around content */ 
+        /* justify-content: space-between; */
+        /* spaces only between the elements */
+        justify-content: flex-start;
+        
+        
+      }
+      td:hover{
+        transition: 0.5s;
+        transform: scale(1.05);
+        background: #7297c1;
+        cursor: cell;
+
+      }
+      th:hover{
+        transition: 0.5s;
+        transform: scale(1.01);
+        background-color: #7297c1;
+        cursor:context-menu;
       }
     </style>
   </head>
@@ -200,6 +236,78 @@
         collaborations at <a href="#">hello@example.com</a>.
       </p>
     </div>
+    <div class="table_qualification">
+      <table>
+        <thead>
+        <tr >
+          <th align="center" colspan="4">Qualification</th>
+        </tr>
+        <tr>
+          <td>Sno.</td>
+          <td>Name</td>
+          <td>Board</td>
+          <td>Grade</td>
+        </tr>
+        </thead>
+        <tr>
+          <td>1</td>
+          <td>10th</td>
+          <td>CBSE</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>12th</td>
+          <td>CBSE</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>B. Tech</td>
+          <td>PU</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td colspan="4">This table contains The educational Records</td>
+        </tr>
+      </table>
+  
+      <table>
+        <thead>
+          <tr>
+            <th align="center" colspan="4">Qualification</th>
+          </tr>
+          <tr>
+            <td>Sno.</td>
+            <td>Name</td>
+            <td>Board</td>
+            <td>Grade</td>
+          </tr>
+        </thead>
+        <tr>
+          <td>1</td>
+          <td>10th</td>
+          <td>CBSE</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>12th</td>
+          <td>CBSE</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>B. Tech</td>
+          <td>PU</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td colspan="4">This table contains The educational Records</td>
+        </tr>
+      </table>
+          </div>
+
 
     <div class="social-box">
       <a href="#">
